@@ -22,9 +22,9 @@ export const displayAndRemoveText = function (e) {
       if (e.key.length <= 1) {
         s.innerHTML += e.key;
       } else if (e.key == "Backspace") {
-        sortingText.removeText();
+        this.removeText();
       } else if (e.key == "Enter") {
-        sortingText.clearText();
+        this.clearText();
       }
     },
   };
